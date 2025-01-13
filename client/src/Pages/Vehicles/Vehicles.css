@@ -1,0 +1,235 @@
+.vehicles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicles .btn{
+    display: flex;
+    margin-left: auto;
+    margin-right: 1rem;
+    gap: 20px;
+}
+
+.vehicles .addBtn{
+    background: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: var(--border-radius-2);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    gap: 5px;
+    transition: all 300ms ease;
+}
+
+.vehicles .addBtn{
+    z-index: 100;
+}
+
+.vehicles .addBtn:hover{
+    background: var(--color-primary-opa);
+}
+
+.vehicles .addBtn.bg{
+    background: var(--color-danger);
+}
+
+.vehicles .addBtn.expense{
+    background: var(--color-warning);
+}
+
+.vehicles .addBtn span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vehicles .addBtn span .icon{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.vehicles .content{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vehicles .content .cardContent{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.vehicles .cardContent .vevicleTypes{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.vehicles .cardContent .vevicleTypes .card{
+    padding: var(--card-padding);
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    flex: 1;
+    border-radius: var(--card-border-radius);
+}
+
+.vehicles .cardContent .vevicleTypes .card .qty{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.vehicles .cardContent .vevicleTypes .card .qty p{
+    font-weight: 500;
+}
+
+.vehicles .vehicleCat{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.vehicles .vehicleCat .cat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-radius: 15px;
+    gap: 10px;
+    background: #41f1b6;
+    color: var(--color-dark);
+}
+
+.vehicle .vehicleCat .cat .Vicons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.vehicles .vehicleCat .edit,
+.vehicles .vehicleCat .delete{
+    margin-left: auto;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+    cursor: pointer;
+    color: var(--color-success);
+    cursor: pointer;
+}
+
+.vehicles .vehicleCat .delete{
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+.vehicles .vehicleCat .delete.null{
+    display: none;
+}
+
+.vehicles .vehicle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.vehicle .top{
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicle .top h2{
+    width: 100%;
+}
+
+.vehicle .top span{
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.vehicles .vehicle .head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color-dark);
+    margin-bottom: 1rem;
+    gap: 2px;
+}
+
+.vehicles .vehicle .head h4{
+    flex: 1;
+    text-align: center;
+}
+
+.vehicles .vehicle .body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vehicles .vehicle .body .bodyInfo{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-dark);
+    text-align: center;
+}
+
+.vehicles .vehicle .body .bodyInfo p{
+    flex: 1;
+    text-align: center;
+}
+
+.vehicles .vehicle .body .bodyInfo p .edit{
+    cursor: pointer;
+}
+
+.vehicles .vehicle .body .bodyInfo p .delete{
+    cursor: pointer;
+    background: var(--color-dark);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+.vehicles .vehicle .body .bodyInfo p .delete.null{
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .vehicles .cardContent .vevicleTypes{
+        flex-direction: column;
+    }
+
+    .vehicles .vehicle .head h4:nth-child(3){
+        display: none;
+    }
+
+    .vehicles .vehicle .body .bodyInfo p:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vehicles .addBtn{
+        padding: 10px 10px;
+    }
+}

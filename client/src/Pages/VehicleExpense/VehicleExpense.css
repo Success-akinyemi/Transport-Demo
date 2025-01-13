@@ -1,0 +1,73 @@
+.vehicleExpense{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.vehicleExpense .spinner{
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicleExpense .infoCard{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.vehicleExpense .infoCard .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vehicleExpense .infoCard small{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.vehicleExpense .infoCard .info{
+    display: flex;
+    flex-direction: column;
+    gap: -1rem;
+}
+
+.vehicleExpense .infoCard .info h4{
+    font-size: 17px;
+}
+
+.vehicleExpense .infoCard .info p{
+    font-size: 16px;
+    margin-top: -1rem;
+}
+
+.vehicleExpense .btnCard{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.vehicleExpense .btnCard .btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 300ms ease;
+    background: var(--color-primary);
+}
+.vehicleExpense .btnCard .btn.red{
+    background: var(--color-danger);
+}
+.vehicleExpense .btnCard .btn:hover{
+    background: var(--color-primary-opa);
+}
